@@ -14,7 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<nativeWindows8App xmlns="http://www.worklight.com/native-windows8-descriptor" id="NativeWin8TagNotifications" platformVersion="7.1.0.00.20150725-0007" version="1.0">
+<nativeWindows8App xmlns="http://www.worklight.com/native-windows8-descriptor" id="NativeWin8TagNotifications" platformVersion="7.1.0.00.20150728-0630" version="1.0">
 	
 	<displayName>NativeWin8TagNotifications</displayName>
 	<description>NativeWin8TagNotifications</description>
