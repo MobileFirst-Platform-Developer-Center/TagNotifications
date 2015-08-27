@@ -17,11 +17,13 @@
 function sendBroadcastNotification(notificationText) {
     var notificationOptions = {};
     notificationOptions.message = {};
-    
+
     notificationOptions.message.alert = notificationText;
-    
+
+    // If attempting to use one of the native samples from the project folder,
+    // Replace "HybridTagNotifications" with the required application id. Refer to Tag Notification tutorial for more information.
     WL.Server.sendMessage("HybridTagNotifications", notificationOptions);
-    
+
     return {
         result : "Notification sent to all users."
     };
@@ -31,15 +33,15 @@ function sendTagNotification(notificationText, notificationTags) {
     var notificationOptions = {};
     notificationOptions.message = {};
     notificationOptions.target = {};
-    
+
     var tags = notificationTags.split(",");
-    
+
     notificationOptions.message.alert = notificationText;
     notificationOptions.target.tagNames = tags;
-    
+
     WL.Server.sendMessage("HybridTagNotifications", notificationOptions);
-    
+
     return {
-        result : "Notification sent to users subscribed to the tag(s): '" + notificationTags + "'." 
+        result : "Notification sent to users subscribed to the tag(s): '" + notificationTags + "'."
     };
 }
