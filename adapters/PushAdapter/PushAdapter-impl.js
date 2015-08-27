@@ -14,22 +14,20 @@
 * limitations under the License.
 */
 
-function sendBroadcastNotification(notificationText) {
+function sendBroadcastNotification(applicationId, notificationText) {
     var notificationOptions = {};
     notificationOptions.message = {};
 
     notificationOptions.message.alert = notificationText;
 
-    // If attempting to use one of the native samples from the project folder,
-    // Replace "HybridTagNotifications" with the required application id. Refer to Tag Notification tutorial for more information.
-    WL.Server.sendMessage("HybridTagNotifications", notificationOptions);
+    WL.Server.sendMessage(applicationId, notificationOptions);
 
     return {
         result : "Notification sent to all users."
     };
 }
 
-function sendTagNotification(notificationText, notificationTags) {
+function sendTagNotification(applicationId, notificationText, notificationTags) {
     var notificationOptions = {};
     notificationOptions.message = {};
     notificationOptions.target = {};
@@ -39,7 +37,7 @@ function sendTagNotification(notificationText, notificationTags) {
     notificationOptions.message.alert = notificationText;
     notificationOptions.target.tagNames = tags;
 
-    WL.Server.sendMessage("HybridTagNotifications", notificationOptions);
+    WL.Server.sendMessage(applicationId, notificationOptions);
 
     return {
         result : "Notification sent to users subscribed to the tag(s): '" + notificationTags + "'."
