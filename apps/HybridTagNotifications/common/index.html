@@ -32,27 +32,13 @@ limitations under the License.
 		</div>
    		
 		<div class="wrapper">
-		    <h3>Broadcast notification</h3>
-		    <p>To receive a broadcast notification: right-click the PushAdapter folder in the Studio, select the "sendBroadcastNotification"
-		    procedure and provide the notification text in quotation marks, for example: "test notification".
-		    </p>
-		    
-		    <h3>Tag notifications</h3>
-		    <p>To receive a notification for a specific tag: first subscribe to a tag below, right-click the PushAdapter folder in the Studio, select the "sendTagNotification"
-		    procedure and provide the notification text and tag name in quotation marks, for example: "test notification","sample-tag1" or to notify multiple tags:  
-		    "test notification","sample-tag1,sample-tag2".
-		    </p>
-		    
-		    <div>
-				<input type="button" id="isPushSupportedButton" class="appButtons" value="isPushSupported" onclick="isPushSupported();"/>
-				<input type="button" id="isSubscribedToTagButton" class="appButtons" value="isSubscribed" onclick="isSubscribedToTags();"/>
-				<br />
-				<input type="button" class="subscribeToTagButton appButtons" value="Subscribe to sample-tag1" onclick="subscribeToSampleTag1();" disabled="disabled"/>
-				<input type="button" class="subscribeToTagButton appButtons" value="Subscribe to sample-tag2" onclick="subscribeToSampleTag2();" disabled="disabled"/>
-				<br />
-				<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag1" onclick="unsubscribeFromSampleTag1();" disabled="disabled"/>
-				<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag2" onclick="unsubscribeFromSampleTag2();" disabled="disabled"/>				
-			</div> 	
+			<input type="button" id="isPushSupportedButton" class="appButtons" value="isPushSupported" onclick="isPushSupported();"/>
+			<input type="button" id="isSubscribedToTagButton" class="appButtons" value="isSubscribed" onclick="isSubscribedToTags();"/>
+			<br />
+			<input type="button" class="subscribeToTagButton appButtons" value="Subscribe to sample-tag2" onclick="subscribeToSampleTag2();" disabled="disabled"/>
+			<br />
+			<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag1" onclick="unsubscribeFromSampleTag1();" disabled="disabled"/>
+			<input type="button" class="unsubscribeFromTagButton appButtons" value="Unsubscribe from sample-tag2" onclick="unsubscribeFromSampleTag2();" disabled="disabled"/>				 	
 		</div>
    	
    		<script src="js/initOptions.js"></script>
