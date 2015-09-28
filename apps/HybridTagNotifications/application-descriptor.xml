@@ -54,4 +54,17 @@ limitations under the License.
             <packageName/>
         </security>
     </android>
+    <windowsPhone8 version="1.0">
+        <uuid>13311881-b07e-43da-ba43-c06bb09cf935</uuid>
+        <pushSender></pushSender>
+    </windowsPhone8>
+    <windows8 version="1.0">
+        <description>windows8 is the identifier Windows 8 Universal desktop/tablet Universal app.  Use the Package family name from the package.appxmanifest file as the value for the packageName tag</description>
+        <uuid>1710d0c4-97dd-4a12-9498-4a391e3284cd</uuid>
+        <pushSender appIdentityName="" appIdentityPublisher="" clientSecret="" packageSID=""/>
+    </windows8>
+    <windowsphoneuniversal version="1.0">
+        <description>windowsphoneuniversal is the identifier for Windows Phone Universal.  Use the Package family name from the package.appxmanifest file as the value for the packageName tag</description>
+        <uuid>526ec162-0b71-4888-8c02-f0e245219e37</uuid>
+    </windowsphoneuniversal>
 </application>
